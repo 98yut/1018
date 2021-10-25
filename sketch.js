@@ -52,28 +52,28 @@ class Ball{
       this.movey = -1*this.movey;
       
       background(255);
-      fill(0);stroke(255,255,0)
+      fill(0);stroke(255,255,0);
     }
     // 上方反彈
     if (this.y+this.size/2>height){
       this.movey = -1*this.movey;
       
       background(255);
-      fill(0);stroke(255,255,0)
+      fill(0);stroke(255,255,0);
     }
     // 左方反彈
     if (this.x-this.size/2<0){
       this.movex = -1*this.movex;
       
       background(255);
-      fill(0);stroke(255,255,0)
+      fill(0);stroke(255,255,0);
     }
     // 上方反彈
     if (this.x+this.size/2>width){
       this.movex = -1*this.movex;
       
       background(255);
-      fill(0);stroke(255,255,0)
+      fill(0);stroke(255,255,0);
     }
   }
   // 物件彼此反彈
@@ -83,7 +83,7 @@ class Ball{
         // 若不是自己
         console.log('a');
         
-        fill(255,255,115);stroke(0)
+        fill(255,255,115);stroke(0);
         
       }else{
         // 若x方向距離太近
@@ -91,16 +91,16 @@ class Ball{
             dist(this.x,this.y,nb.x,nb.y)<this.size)
           {this.movex=-1*this.movex;
            
-           fill(0);stroke(255,255,0)
-           scale(2)
+           fill(0);stroke(255,255,0);
+           scale(2);
            
            }
         if (abs(this.y-nb.y)<this.size&& 
             dist(this.x,this.y,nb.x,nb.y)<this.size)
           {this.movey=-1*this.movey;
            
-           fill(0);stroke(255,255,0)
-           scale(2)
+           fill(0);stroke(255,255,0);
+           scale(2);
            
            }
       }
